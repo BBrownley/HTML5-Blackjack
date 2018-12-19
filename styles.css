@@ -1,0 +1,183 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Noto Sans SC', sans-serif;
+}
+
+header {
+	background-color: #18992B;
+	padding: 20px;
+	border-bottom: 3px solid black;
+}
+
+header > h1 {
+	color: #E4FC9A;
+	text-align: center;
+}
+
+.game-board {
+	text-align: center;
+	background-color: #888;
+	padding: 20px 0;
+	background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/Er68FohPl/on-empty-green-table-word-win-out-of-casino-chips-red-w-leeter-black-i-and-blue-n-gambling-poker-game-stop-motion-close-up-4k-ultra-hd_rdu0_jrzx_thumbnail-full01.png");
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+
+/*#dealer {
+	border: 2px solid black;
+}
+
+#player {
+	border: 2px solid red;
+}*/
+
+.hand {
+	height: 120px;
+	width: 520px;
+	padding: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 0px auto 20px auto;
+	position: relative;
+}
+
+.hand > .hand-value {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	font-size: 20px;
+	color: white;
+}
+
+.bet {
+	margin: 20px auto;
+}
+
+.button-container {
+	padding: 20px;
+	display: inline-block;
+}
+
+.bet-button {
+	display: inline-block;
+	font-size: 30px;
+	border: 5px solid black;
+	border-radius: 100px;
+	width: 100px;
+	height: 100px;
+	background-color: transparent;
+	color: #222;
+	position: relative;
+	margin: 5px;
+}
+
+.bet-button-active {
+	background-color: #999;
+	color: #777;
+}
+
+.bet-button > span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#bet-max-button, #bet-selected-button {
+	font-size: 20px;
+}
+
+#credits {
+	margin: 20px auto 0px auto;
+	font-size: 20px;
+}
+
+footer {
+	background-color: #18992B;
+	padding: 20px;
+	border-top: 3px solid black;
+}
+
+footer > h1 {
+	color: #18992B;
+}
+
+.card {
+	width: 60px;
+	height: 90px;
+	line-height: 80px;
+	font-size: 40px;
+	border: 5px solid darkblue;
+	position: relative;
+	background-color: white;
+	display: inline-block;
+	text-align: center;
+}
+
+.card-suitImageSmall {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+
+.card-suitImageSmall-spade {
+	background-image: url("Images/Spade.png");
+	background-size: cover;
+	width: 16px;
+	height: 16px;
+}
+
+.card-suitImageBig {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%);
+	transform: translateY(-50%);
+}
+
+.card-suitImageSmall-1 {
+	background-image: url("Images/Spade.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 16px;
+	width: 16px;
+}
+
+.card-suitImageSmall-2 {
+	background-image: url("Images/Spade.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	height: 16px;
+	width: 16px;
+}
+
+.card-suitImageSmall-3 {
+	background-image: url("Images/Spade.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	height: 16px;
+	width: 16px;
+}
+
+.card-suitImageSmall-4 {
+	background-image: url("Images/Spade.png");
+	background-repeat: no-repeat;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	height: 16px;
+	width: 16px;
+}
